@@ -1,0 +1,853 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+body{
+    font-family: serif;
+    background-color: #040000;
+}
+body p{
+    font-size: 17px;
+    padding-top: 5px;
+}
+.sidebar{
+    position: fixed;
+    left: -240px;
+    width: 200px;
+    height: 100%;
+    background-color: #040000;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+    border: 2px solid #100e17;
+}
+.sidebar header{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background-color: #040000;
+    border: 1px solid #100e17;
+    user-select: none;
+}
+#ir-picture{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    padding: 22px 22px 0px 0px;
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .5s;
+}
+ul li:hover a{
+    padding-left: 55px;
+}
+.sidebar ul i a{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: fixed;
+    cursor: pointer;
+    background-color: #100e17;
+    border-radius: 3px;
+}
+label #btn{
+    left: 30px;
+    top: 10px;
+    font-size: 55px;
+    padding: 7px 12px;
+    transition: all .5s;
+    color: #F5FFFA;
+    background-color: #040000;
+    border-radius: 10%;
+    z-index: 1111111;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: snow;
+    background-color: #040000;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+label #cancel:hover{
+    background-color: #100e17;
+}
+label #btn:hover{
+    background-color: #100e17;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 200px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 155px;
+}
+#check:checked ~ section{
+    margin-left: 200px;
+    
+}
+section{
+    width: 100%;
+    background-color: #040000;
+    color: snow;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s;
+}
+
+
+#geografi-html{
+    width: 80%;
+    margin-left: 10%;
+    /*background-color:#042331;*/
+    background-color: #040000;
+    height: 1822px;
+    color: black;
+}
+#img-g{
+    width: 100%;
+    height: 572px;
+    float: left;
+    background-color: #040000;
+}
+#img-g img{
+    width: 100%;
+    height: 90%;
+    margin-top: 2%;
+}
+.center{
+    /*background-color: #31190D;*/
+    background-color: #040000;
+    width: 100%;
+    height: 1250px;
+    float: left;
+}
+#geo-one{
+    background-color: rebeccapurple;
+    width: 60%;
+    height: 400px;
+    float: left;
+}
+#karta{
+    width: 100%;
+    height: 100%;
+}
+#geo-two{
+    background-color:0;
+    width: 40%;
+    height: 650px;
+    float: right;
+    text-align: center;
+}
+#geo-two p{
+    font-size: 16px;
+    padding: 30px 10px 6px 20px;
+    color: lightgray;
+}
+#geo-two h2{
+    font-size: 25px;
+    padding: 25px 10px 10px 20px;
+    color:lightgray;
+}
+#geo-two-two{
+    width: 60%;
+    float: left;
+    height: 250px;
+}
+#geo-two-two p{
+    font-size: 16px;
+    padding: 10px 10px 16px 10px;
+    color: lightgray;
+}
+#geo-tree{
+    width: 60%;
+    float: left;
+    height: 370px;
+}
+#geo-tree p{
+    font-size: 16px;
+    padding: 20px 10px 5px 10px;
+    font-size: 15px;
+    color: lightgray;
+}
+#geo-tree b{
+    color: lightgray;
+    font-size: 18px;
+}
+#geo-four{
+    width: 40%;
+    /*background-color: red;*/
+    text-align: center;
+    float: left;
+    height: 400px;
+}
+#takht{
+    width: 90%;
+    height: 90%;
+    
+}
+#geo-five{
+    float: left;
+    height: 160px;
+}
+#geo-five p{
+    font-size: 16px;
+    padding: 10px 18px 5px 10px;
+    font-size: 15px;
+    color: lightgray;
+}
+
+
+
+
+
+
+#histori-html{
+    width: 80%;
+    margin-left: 10%;
+    /*background-color:#042331;*/
+    background-color: #040000;
+    height: 1812px;
+    color: black;
+}
+#img-h{
+    width: 100%;
+    height: 572px;
+    float: left;
+    text-align: center;
+}
+#img-h img{
+    width: 100%;
+    height: 90%;
+    margin-top: 2%;
+}
+#his-one{
+    width: 100%;
+    height: 240px;
+    float: left;
+    text-align: center;
+    color: lightgray;
+}
+#karta-h{
+    width: 100%;
+    height: 100%;
+}
+#his-two{
+    background-color:0;
+    width: 50%;
+    height: 360px;
+    float: left;
+    text-align: center;
+}
+#his-two p{
+    font-size: 17px;
+    padding: 30px 10px 6px 20px;
+    color: lightgray;
+}
+#his-two h1{
+    font-size: 35px;
+    padding: 25px 10px 10px 20px;
+    color:white
+}
+#his-two-two{
+    width: 50%;
+    float: left;
+    height: 360px;
+}
+#his-two-two p{
+ font-size: 17px;
+    padding: 10px 10px 16px 20px;
+    color: lightgray;
+}
+#his-tree{
+    width: 50%;
+    float: left;
+    height: 400px;
+    padding-top: 15px;
+}
+#his-tree p{
+    font-size: 17px;
+    padding: 20px 10px 5px 10px;
+    font-size: 15px;
+    color: lightgray;
+}
+#his-tree b{
+    color: lightgray;
+    font-size: 18px;
+}
+#his-four{
+    width: 50%;
+    /*background-color: red;*/
+    text-align: center;
+    float: left;
+    height: 400px;
+    padding-top: 15px;
+}
+#takht{
+    width: 90%;
+    height: 90%;
+    
+}
+#his-five{
+    width: 100%;
+    float: left;
+    height: 200px;
+        padding-top: 15px;
+
+}
+#his-five p{
+    font-size: 17px;
+    padding: 10px 18px 5px 10px;
+    font-size: 15px;
+    color: lightgray;
+}
+
+
+
+
+
+
+
+
+#politik-html{
+    width: 80%;
+    margin-left: 10%;
+    /*background-color:#042331;*/
+    background-color: #040000;
+    height: 1812px;
+    color: black;
+}
+#img-po{
+    width: 100%;
+    height: 572px;
+    float: left;
+    text-align: center;
+}
+#img-po img{
+    width: 100%;
+    height: 90%;
+    margin-top: 2%;
+}
+#po-one{
+    width: 100%;
+    height: 250px;
+    float: left;
+    text-align: center;
+    color: lightgray;
+}
+#po-one p{
+    padding: 10px 0px 2px 0px;
+}
+#po-one h1{
+    font-size: 30px;
+}
+#karta-po{
+    width: 100%;
+    height: 100%;
+}
+#po-two{
+    background-color:0;
+    width: 50%;
+    height: 360px;
+    float: left;
+    text-align: center;
+}
+#po-two p{
+    font-size: 17px;
+    padding: 30px 10px 6px 20px;
+    color: lightgray;
+}
+#po-two h1{
+    font-size: 35px;
+    padding: 25px 10px 10px 20px;
+    color:white
+}
+#po-two-two{
+    width: 50%;
+    float: left;
+    height: 360px;
+
+}
+#po-two-two p{
+ font-size: 17px;
+    padding: 10px 10px 16px 20px;
+    color: lightgray;
+}
+#po-two-two b{
+    font-size: 25px;
+    padding: 10px 10px 16px 20px;
+    color: lightgray;
+}
+#po-tree{
+    width: 50%;
+    float: left;
+    height: 430px;
+    padding-top: 15px;
+}
+#po-tree p{
+    font-size: 17px;
+    padding: 20px 10px 5px 0px;
+    font-size: 15px;
+    color: lightgray;
+}
+#po-tree b{
+    color: lightgray;
+    font-size: 18px;
+}
+#po-four{
+    width: 50%;
+    text-align: center;
+    float: left;
+    height: 400px;
+    padding-top: 15px;
+}
+#bild-po{
+    width: 90%;
+    height: 90%;
+    
+}
+#po-five{
+    width: 100%;
+    float: left;
+    height: 150px;
+    padding-top: 15px;
+}
+#po-five p{
+    font-size: 17px;
+    padding: 10px 18px 5px 0px;
+    font-size: 15px;
+    color: lightgray;
+}
+.po-five-del{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.po-five-del b{
+    font-size: 20px;
+    padding: 10px 10px 16px 0px;
+    color: lightgray;
+}
+#ekonomi-html{
+    width: 80%;
+    margin-left: 10%;
+    background-color: #040000;
+    height: 1712px;
+    color: black;
+    z-index: 111;
+}
+#img-eko{
+    width: 100%;
+    height: 572px;
+    float: left;
+    text-align: center;
+}
+#img-eko img{
+    width: 100%;
+    height: 90%;
+    margin-top: 2%;
+}
+#eko-one{
+    width: 100%;
+    height: 250px;
+    float: left;
+    text-align: center;
+    color: lightgray;
+}
+#eko-one p{
+    padding: 10px 0px 2px 0px;
+}
+#eko-one h1{
+    font-size: 30px;
+}
+#karta-eko{
+    width: 100%;
+    height: 100%;
+}
+#eko-two{
+    background-color:0;
+    width: 50%;
+    height: 360px;
+    float: left;
+    text-align: center;
+}
+#eko-two p{
+    font-size: 17px;
+    padding: 30px 10px 6px 20px;
+    color: lightgray;
+}
+#eko-two h1{
+    font-size: 35px;
+    padding: 25px 10px 10px 20px;
+    color:white
+}
+#eko-two-two{
+    width: 50%;
+    float: left;
+    height: 360px;
+}
+#eko-two-two p{
+ font-size: 17px;
+    padding: 10px 10px 16px 20px;
+    color: lightgray;
+}
+#eko-two-two h1{
+    font-size: 28px;
+    padding: 10px 10px 16px 20px;
+    color: lightgray;
+}
+#eko-tree{
+    width: 50%;
+    float: left;
+    height: 430px;
+    padding-top: 15px;
+}
+#eko-tree p{
+    font-size: 17px;
+    padding: 20px 10px 5px 0px;
+    font-size: 15px;
+    color: lightgray;
+}
+#eko-tree h1{
+    color: lightgray;
+    font-size: 28px;
+}
+#eko-four{
+    width: 50%;
+    /*background-color: red;*/
+    text-align: center;
+    float: left;
+    height: 400px;
+    padding-top: 15px;
+}
+#bild-eko{
+    width: 90%;
+    height: 90%;
+}
+
+
+
+
+
+
+
+
+#utbildning-html{
+    width: 80%;
+    margin-left: 10%;
+    background-color: #040000;
+    height: 1912px;
+    color: black;
+    z-index: 111;
+}
+#img-ut{
+    width: 100%;
+    height: 572px;
+    float: left;
+    text-align: center;
+}
+#img-ut img{
+    width: 100%;
+    height: 90%;
+    margin-top: 2%;
+}
+#ut-one{
+    width: 100%;
+    height: 250px;
+    float: left;
+    text-align: center;
+    color: lightgray;
+}
+#ut-one p{
+    padding: 10px 0px 2px 0px;
+}
+#ut-one h1{
+    font-size: 30px;
+}
+#karta-ut{
+    width: 100%;
+    height: 100%;
+}
+#ut-two{
+    background-color:0;
+    width: 50%;
+    height: 360px;
+    float: left;
+    text-align: center;
+}
+#ut-two p{
+    font-size: 17px;
+    padding: 30px 10px 6px 20px;
+    color: lightgray;
+}
+#ut-two h1{
+    font-size: 35px;
+    padding: 25px 10px 10px 20px;
+    color:white
+}
+#ut-two-two{
+    width: 50%;
+    float: left;
+    height: 360px;
+
+}
+#ut-two-two p{
+ font-size: 17px;
+    padding: 10px 10px 16px 20px;
+    color: lightgray;
+}
+#ut-two-two h1{
+    font-size: 28px;
+    padding: 10px 10px 16px 20px;
+    color: lightgray;
+}
+#ut-tree{
+    width: 100%;
+    height: 700px;
+    margin-top: 30px;
+    float: left;
+    text-align: center;
+}
+#test-test{
+    width: 100%;
+    height: 90%;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+
+#relgion-html{
+    width: 80%;
+    margin-left: 10%;
+    /*background-color:#042331;*/
+    background-color: #040000;
+    height: 2112px;
+    color: black;
+}
+#img-re{
+    width: 100%;
+    height: 572px;
+    float: left;
+    background-color: #040000;
+
+}
+#img-re img{
+    margin-left: 2%;
+    border: 1px solid #100e17;
+    width: 96%;
+    height: 90%;
+    margin-top: 5%;
+}
+#re-one{
+    width: 100%;
+    height: 340px;
+    float: left;
+    text-align: center;
+    color: lightgray;
+}
+#re-one p{
+    padding: 20px 0px 0px 0px;
+}
+#re-one h1{
+    font-size: 35px;
+}
+#karta-re{
+    width: 100%;
+    height: 100%;
+}
+#re-two{
+    background-color:0;
+    width: 50%;
+    height: 360px;
+    float: left;
+    text-align: center;
+}
+#re-two p{
+    font-size: 17px;
+    padding: 30px 10px 6px 20px;
+    color: lightgray;
+}
+#re-two h1{
+    font-size: 35px;
+    padding: 25px 10px 10px 20px;
+    color:white
+}
+#re-two-two{
+    width: 50%;
+    float: left;
+    height: 360px;
+
+}
+#re-two-two p{
+ font-size: 17px;
+    padding: 10px 10px 16px 20px;
+    color: lightgray;
+}
+
+#re-tree{
+    width: 100%;
+    float: left;
+    height: 240px;
+    padding-top: 15px;
+}
+#re-tree p{
+    font-size: 17px;
+    padding: 20px 10px 5px 10px;
+    font-size: 15px;
+    color: lightgray;
+}
+#re-tree b{
+    color: lightgray;
+    font-size: 18px;
+}
+#re-four{
+    width: 100%;
+    /*background-color: red;*/
+    text-align: center;
+    float: left;
+    height: 500px;
+    padding-top: 15px;
+}
+#takht{
+    width: 90%;
+    height: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+#galler{
+    width: 80%;
+    height: 1500px;
+    margin-left: 10%;
+}
+#galler h1{
+    color: black;
+    font-size: 55px;
+}
+#CrossFade {
+    background: #fff;
+    display: flex;
+    align-items: flex-end;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+#CrossFade img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: #000;
+    opacity: 0;
+    transform: scale(1.4) rotate(12deg);
+    animation: CrossFade 24s infinite;
+}
+#CrossFade img:nth-child(3) {
+    animation-delay: 6s;
+}
+#CrossFade img:nth-child(2) {
+    animation-delay: 12s;
+}
+#CrossFade img:nth-child(1) {
+    animation-delay: 18s;
+}
+        
+@-moz-keyframes CrossFade {
+25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}
+  40% {
+    opacity: 0;
+}
+}
+@-webkit-keyframes CrossFade {
+25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}
+40% {
+    opacity: 0;
+}
+}
+@-o-keyframes CrossFade {
+25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}
+40% {
+    opacity: 0;
+}
+}
+@keyframes CrossFade {
+25% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}
+40% {
+    opacity: 0;
+}
+}
+
+#two{
+    width:100%;
+    height: 2900px;
+    float: left;
+    line-height: 1.5;
+    cursor:pointer;
+
+}
+#two img{
+    width: 32%;
+    height: 300px;
+    float: left;
+    margin: 7px;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out; 
+}
+
+#two img:hover{
+    transform: scale(1.05); 
+}
+  
+#two .img-content:hover{
+    z-index: 1;
+    position: absolute;
+    white-space: nowrap;
+    display: none;
+    padding: 1rem;
+    background: #fff;
+}
